@@ -1,0 +1,22 @@
+td{
+    font-size: x-large;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    color: rgb(74, 74, 74);
+}
+.yahei{
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+.gaokao{
+    font-size: x-large;
+}
+.gaokao span{
+    font-size: xx-large;
+    color: red;
+}
+.hitokoto{
+    font-size: larger;
+    color: dimgray;
+}
+.gray{
+    color: rgb(74, 74, 74);
+}

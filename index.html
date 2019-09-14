@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/hyper.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body background="pic/blank.jpg" onselectstart="return   false;">
+    <div class="row">
+        <div class="col s4">
+            <!-- 日期 倒计时 天气 -->
+            <h2 id="month" class="right-align gray">载入月份</h2>
+            <h3 id="day" class="right-align gray">载入日期</h3>
+            <p class="right-align yahei gaokao gray">距离高考 <span id="gaokao">载入</span> 天</p>
+            <div class="right-align">
+                <iframe src="weather.html?bg=3&md=034&lc=CN101190401&key=0b23abc522ab4c15804ace26ef307466"
+                    frameborder="0" scrolling="no" width="400" height="790"></iframe>
+            </div>
+        </div>
+        <div class="col s4">
+            <!-- 图片 -->
+            <img class="responsive-img" src="pic/bg.jpg">
+        </div>
+        <div class="col s4">
+            <!-- 一言 课表 通知 -->
+            <p id="hitokoto" class="yahei hitokoto">载入一言</p>
+            <div id="schedule">
+                <!-- 加载图标 -->
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-blue">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-red">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-yellow">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-green">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p><a class="waves-effect waves-light btn" onclick="location.reload()">刷新页面</a></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/hyper.js"></script>
+</body>
+
+</html>
