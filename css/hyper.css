@@ -20,3 +20,20 @@ td{
 .gray{
     color: rgb(74, 74, 74);
 }
+.biaoyu{
+    color:red;
+    font-size: 70px;
+}
+.biaoyuer{
+    font-size: 70px;
+}
+div#homework .title{
+    font-size: large;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    color: rgb(74, 74, 74);
+}
+div#homework pre{
+    font-size: x-large;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    color: rgb(74, 74, 74);
+}

@@ -11,9 +11,9 @@
 <body background="pic/blank.jpg" onselectstart="return   false;">
     <div class="row">
         <div class="col s4">
-            <!-- 日期 倒计时 天气 -->
-            <h2 id="month" class="right-align gray">载入月份</h2>
-            <h3 id="day" class="right-align gray">载入日期</h3>
+            <!-- 日期 倒计时? 天气 -->
+            <h2 class="right-align gray"><span id="month">载入月份</span> <span id="day">载入日期</span></h2>
+            <!-- <h3 class="right-align gray yahei">室内温度 <span id="tpt">--</span> °C 湿度 <span id="sd">--</span></h3> -->
             <p class="right-align yahei gaokao gray">距离高考 <span id="gaokao">载入</span> 天</p>
             <div class="right-align">
                 <iframe src="weather.html?bg=3&md=034&lc=CN101190401&key=0b23abc522ab4c15804ace26ef307466"
@@ -22,68 +22,37 @@
         </div>
         <div class="col s4">
             <!-- 图片 -->
-            <img class="responsive-img" src="pic/bg.jpg">
+            <!--img class="responsive-img" src="pic/bg.jpg"-->
+            <img src="pic/6769923365491704333.jpg" class="responsive-img"><img src="pic/6769923657151021582.jpg" class="responsive-img">
+            <p class="biaoyuer right-align yahei">——梁妹</p>
         </div>
         <div class="col s4">
             <!-- 一言 课表 通知 -->
             <p id="hitokoto" class="yahei hitokoto">载入一言</p>
-            <div id="schedule">
-                <!-- 加载图标 -->
-                <div class="preloader-wrapper big active">
-                    <div class="spinner-layer spinner-blue">
-                        <div class="circle-clipper left">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="gap-patch">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="circle-clipper right">
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-
-                    <div class="spinner-layer spinner-red">
-                        <div class="circle-clipper left">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="gap-patch">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="circle-clipper right">
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-
-                    <div class="spinner-layer spinner-yellow">
-                        <div class="circle-clipper left">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="gap-patch">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="circle-clipper right">
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-
-                    <div class="spinner-layer spinner-green">
-                        <div class="circle-clipper left">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="gap-patch">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="circle-clipper right">
-                            <div class="circle"></div>
-                        </div>
-                    </div>
+            <div class="col s8">
+                <div id="homework">
+                    <h3 class="right-align gray yahei">室内温度 <span id="tpt">{{wd}}</span>°C 湿度 <span id="sd">{{sd}}</span>%</h3>
+                    <div class="title">语文</div>
+                    <pre>{{C}}</pre>
+                    <p class="title">数学</p>
+                    <pre>{{M}}</pre>
+                    <p class="title">英语</p>
+                    <pre>{{E}}</pre>
+                    <p class="title">物理</p>
+                    <pre>{{P}}</pre>
+                    <p class="title">生物</p>
+                    <pre>{{B}}</pre>
+                </div>
+            </div>
+            <div class="col s4">
+                <div id="schedule">
                 </div>
             </div>
             <p><a class="waves-effect waves-light btn" onclick="location.reload()">刷新页面</a></p>
         </div>
-    </div>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/hyper.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/vue.js"></script>
+        <script type="text/javascript" src="js/hyper.js"></script>
 </body>
 
 </html>
